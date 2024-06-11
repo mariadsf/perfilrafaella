@@ -1,7 +1,4 @@
-body{
-    background-color: #606a91; 
-}                                      H1{
-background-color: rgb(157, 180, 202);
-}  header{
-    background-color: #606a91;
+;:root, :root[ data-theme='dark']{
+   --prymary-color: #f0f0f0;
+   --prymary-bg-color:#111217;
 }
