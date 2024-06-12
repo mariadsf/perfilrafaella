@@ -1,0 +1,15 @@
+:root, :root[ data-theme='dark']{
+   --primary-color: #f0f0f0;
+   --primary-bg-color:#021024;
+}
+ 
+/*tema light */
+:root[data-theme='light'] {
+     --primary-color: #000; /* cor principal textos */
+       --primary-color:var--#FFFFFF;
+}
+
+body{
+background: var(--primary-bg-color); /*cor fundo*/
+color: var(--primary-color);
+}
