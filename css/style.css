@@ -7,8 +7,8 @@
     --primary-border-color: #28292E;
     --secondary--border-color: #f0f0f0;
     --title-color: #f0f0f0;
-    --text-color: #8f8f8f;
-    --link-color: #f0f0f0;
+    --link-color: #8f8f8f;
+    --link-hover: #f0f0f0;
     --icon-color: #C7C8C9;
  }
   
@@ -16,12 +16,12 @@
  :root[data-theme='light'] {
   
       --primary-color: #000; /* cor principal textos */
-        --primary-color:var--#ceaec7;
+        --primary-color:#ceaec7;
         --secondary-bg-color: #845677;
     --primary-border-color: #28292E;
     --secondary--border-color: #967e95;
     --title-color: #f0f0f0;
-    --text-color: #8f8f8f;
+    --link-hover: #8f8f8f;
     --link-color: #f0f0f0;
     --icon-color: #C7C8C9;
  }
@@ -53,15 +53,14 @@ a:hover {
 .header{
   display:flex ;
   flex-flow: row wrap;
-  /*coloca o conteudo em linha e permite a quebra de linha. */
+  
   justify-content: space-between;
-  /* os itens dentro do container flexivel serão distribuidos de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles.*/
+  
   align-items: center;
   width: 100%;
   padding: 0.5rem 5rem;
   z-index: 2;
-  /*sobreposição,  Menu fica fixo sobre o conteúdo do site no modo desktop 
-conforme vc desce o site o z-index sobrepõe o menu pro resto do site pra ficar fixo*/
+  
  
 }
 
@@ -69,4 +68,22 @@ conforme vc desce o site o z-index sobrepõe o menu pro resto do site pra ficar 
 .header-logo .logo{
   width: 3.25rem;
   height: 3.25rem;
+}
+#toggleTheme{
+  font-size: 1.5rem;
+  color: var(--icon-color);
+  cursor: pointer;
+  transition: ease-in-out .4s;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  background: var(--primary-bg-color);
+  gap: 1rem;
+}
+.menu-link{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
