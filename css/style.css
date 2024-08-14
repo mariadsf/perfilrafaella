@@ -16,10 +16,10 @@
  :root[data-theme='light'] {
   
       --primary-color: #000; /* cor principal textos */
-        --primary-color:#ceaec7;
-        --secondary-bg-color: #845677;
+        --primary-color:#d6d3d6;
+        --secondary-bg-color: #1e1732;
     --primary-border-color: #28292E;
-    --secondary--border-color: #967e95;
+    --secondary--border-color: #15065c;
     --title-color: #f0f0f0;
     --link-hover: #8f8f8f;
     --link-color: #f0f0f0;
@@ -86,4 +86,29 @@ a:hover {
   display: flex;
   align-items: center;
   gap: .5rem;
+}
+
+.menu-mobile{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  border-top: 1px solid var(--primary-border-color);
+}
+
+.menu-mobile .menu-link {
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+.menu-link .active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
+  color: var(--link-hover);
+  font-weight: 600;
+}
+
+.menu.icon, .menu-text {
+
 }
