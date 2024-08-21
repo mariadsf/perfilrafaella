@@ -4,7 +4,7 @@
 /* TEMA DARK */
 :root, :root[data-theme='dark'] {
     --primary-color: #f0f0f0;  /*cor principal Textos*/
-    --primary-bg-color: #171111;  /*cor principal Fundo*/ 
+    --primary-bg-color: #585f72;  /*cor principal Fundo*/ 
     /* bg = background == cor do Fundo */
     --secondary-bg-color: #28292E;  
     --primary-border-color: #28292E;
@@ -18,7 +18,7 @@
 }
 /* TEMA LIGHT */
 :root[data-theme='light'] {
-    --primary-color: #0d0c09; /* cor principal textos */
+    --primary-color: #090805; /* cor principal textos */
 
     --primary-bg-color: #f0f2f5;
     --secondary-bg-color: #C7C8C9;
@@ -78,6 +78,27 @@ i {
     width: 3.25rem;
     height: 3.25rem;
 }
+
+
+.header-logo .logo2 {
+    width: 8.10rem;
+    height: 7rem;
+    margin-left: 5px;
+    position: relative;
+    bottom: -10px;
+}
+
+
+
+html[data-theme='light'] .logo {
+    filter: invert(1);
+}
+
+html[data-theme='light'] .logo2 {
+    filter: invert(0);
+}
+
+
 
 #toggleTheme {
     font-size: 1.5rem; 
