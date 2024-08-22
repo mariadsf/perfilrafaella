@@ -4,7 +4,7 @@
 /* TEMA DARK */
 :root, :root[data-theme='dark'] {
     --primary-color: #f0f0f0;  /*cor principal Textos*/
-    --primary-bg-color: #585f72;  /*cor principal Fundo*/ 
+    --primary-bg-color: #282d39;  /*cor principal Fundo*/ 
     /* bg = background == cor do Fundo */
     --secondary-bg-color: #28292E;  
     --primary-border-color: #28292E;
@@ -81,8 +81,8 @@ i {
 
 
 .header-logo .logo2 {
-    width: 8.10rem;
-    height: 7rem;
+    width: 8.50rem;
+    height: 8rem;
     margin-left: 5px;
     position: relative;
     bottom: -10px;
