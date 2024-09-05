@@ -4,7 +4,7 @@
 /* TEMA DARK */
 :root, :root[data-theme='dark'] {
     --primary-color: #f0f0f0;  /*cor principal Textos*/
-    --primary-bg-color: #101016;  /*cor principal Fundo*/ 
+    --primary-bg-color: #101016;;  /*cor principal Fundo*/ 
     /* bg = background == cor do Fundo */
     --secondary-bg-color: #28292E;  
     --primary-border-color: #28292E;
@@ -206,8 +206,77 @@ html[data-theme='light'] .logo2 {
     gap: 1.5rem;
 }
 
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+#home, .projetos, .sobre, .contato {
+    padding: 5rem 5rem;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
 
 
+.card-cover {
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.card-description {
+    color: var(--primary-color);
+    /* font-size: ; */
+    text-align: justify;
+}
+
+.card-lista {
+    margin-left: 2rem;
+}
+
+.card-item {
+    list-style: circle;
+    margin: 0.25rem;
+}
+
+.card-button, .card-description {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card-button .btn {
+    padding: .65rem 1.25rem;
+}
+
+.card-button .btn span {
+    font-size: 1rem;
+}
 
 
 
@@ -227,12 +296,41 @@ html[data-theme='light'] .logo2 {
     .header-nav {
         display: flex;
     }
-}
-.video iframe{
-    width: 100%;
-    aspect-ratio: 16/9;
-}
-#home, .projetos, .sobre, .contato {
-    padding: 3.5rem 5rem;
+    .header-nav,
+    .header-toggle{
+        min-width: 30% ;
+    }
 }
 
+@media (min-width: 992px) {
+    .projeto-card {
+        
+            display: flex;
+            flex-direction: column;
+            gap: 7rem;
+        
+    }
+    .card-reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .card-cover {
+        width: 55%;
+    }
+    .sobre {
+        gap: 5rem;
+    }
+    .sobre-content1, .sobre-content2 {
+        display: grid;
+        grid-template-columns: 34% 60%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+    .sobre-descricao h2 {
+        text-align: left;
+    }
+    .descricao-button {
+        justify-content: flex-start;
+    }
+}
